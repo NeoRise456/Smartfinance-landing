@@ -323,7 +323,7 @@ export default defineComponent({
 /* --------------------- */
 .aboutus-container {
   min-height: 100vh;
-  background-image: url('./assets/images/team-background.png');
+  background-image: url('assets/images/team-background.png');
   background-size: cover;
   background-position: center;
   align-content: center;
