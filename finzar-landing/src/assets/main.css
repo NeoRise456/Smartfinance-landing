@@ -1,0 +1,14 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+a,
+.white {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  padding: 3px;
+}

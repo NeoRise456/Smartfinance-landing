@@ -1,0 +1,70 @@
+{
+  "toolbar": {
+    "services": "Nuestros Servicios",
+    "about": "Sobre Nosotros",
+    "mission": "Nuestra Misión",
+    "product": "Sobre el Producto",
+    "contact": "Contáctanos"
+  },
+  "splash": {
+    "propietary": "Por SmartFinance",
+    "subtitle": "No pierdas de vista tus gastos, ganancias o transacciones. Nosotros te damos una mano.",
+    "slang": "Finanzas Personales. Mas na.",
+    "button": "Iniciar Sesión"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "manage": {
+      "title": "Gestiona tus Ingresos y Gastos",
+      "description": "Con Finzar, podrás llevar un control de tus ingresos y gastos de manera sencilla y eficiente."
+    },
+    "savings": {
+      "title": "Planea tus ahorros",
+      "description": "Con Finzar, podrás planear tus ahorros y saber en todo momento tu progreso."
+    },
+    "statistics": {
+      "title": "Conoce tu Comportamiento con Estadísticas y Reportes",
+      "description": "Con Finzar, podrás visualizar mediante estadísticas y reportes un resumen de tus movimientos económicos."
+    }
+  },
+  "about": {
+    "title": "Sobre SmartFinance",
+    "description": "Somos SmartFinance, una startup creada por estudiantes de la carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas del Perú, quienes se han juntado para crear una solución con el que las personas puedan llevar un control de sus finanzas personales y se sientan cómodas y seguras.",
+    "team": "El Equipo"
+  },
+  "mission": {
+    "title": "Nuestra Misión",
+    "mission": {
+      "title": "Misión",
+      "description": "Nuestra misión es proporcionar a las personas una solución fácil de usar para tomar el control de sus finanzas personales."
+    },
+    "vision": {
+      "title": "Visión",
+      "description": "En SmartFinance nos visualizamos como un referente en la creación de soluciones financieras accesibles y prácticas para los peruanos."
+    },
+    "values": {
+      "title": "Valores",
+      "description": "Finzar valora la educación financiera, la accesibilidad, y el empoderamiento de sus usuarios para tomar decisiones económicas informadas y responsables."
+    }
+  },
+  "product": {
+    "team": "Sobre el Equipo",
+    "product": "Sobre el Producto"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "button": "ENVIAR"
+    }
+  },
+  "footer": {
+    "privacy": "Política de Privacidad",
+    "cookies": "Política de Cookies",
+    "legal": "Aviso Legal",
+    "contact": "Contáctanos"
+  }
+}
