@@ -70,11 +70,11 @@ export default defineComponent({
 
         <template #center>
           <a href="#services" class="nav-spacer"> {{ $t('toolbar.services') }} </a>
+          <a href="#features" class="nav-spacer"> {{ $t('toolbar.features') }} </a>
           <a href="#aboutus" class="nav-spacer"> {{ $t('toolbar.about') }} </a>
           <a href="#mission" class="nav-spacer"> {{ $t('toolbar.mission') }} </a>
           <a href="#videos" class="nav-spacer"> {{ $t('toolbar.product') }} </a>
           <a href="#contact" class="nav-spacer"> {{ $t('toolbar.contact') }} </a>
-          <a href="#features" class="nav-spacer"> {{ $t('toolbar.features') }} </a>
         </template>
 
         <template #end>
@@ -323,6 +323,11 @@ export default defineComponent({
 </template>
 
 <style scoped>
+#features,
+#mission {
+  padding-top: 80px;
+  margin-top: -80px;
+}
 /* --------------- */
 /* Navigation Bar */
 /* --------------- */
