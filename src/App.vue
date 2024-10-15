@@ -127,6 +127,46 @@ export default defineComponent({
       </div>
     </section>
 
+
+
+      <section id="features">
+        <div class="features-container">
+          <div class="section-title">{{ $t('features.title') }}</div>
+          <div class="section-content">
+
+            <!-- Feature 1: Metas de ahorro -->
+            <div class="feature-card">
+              <i class="pi pi-dollar feature-icon"></i>
+              <h3 class="feature-title">{{ $t('features.savingsGoals.title') }}</h3>
+              <p class="feature-description">{{ $t('features.savingsGoals.description') }}</p>
+            </div>
+
+            <!-- Feature 2: Overview de Wallets -->
+            <div class="feature-card">
+              <i class="pi pi-wallet feature-icon"></i>
+              <h3 class="feature-title">{{ $t('features.walletsOverview.title') }}</h3>
+              <p class="feature-description">{{ $t('features.walletsOverview.description') }}</p>
+            </div>
+
+            <!-- Feature 3: Progreso en tiempo real -->
+            <div class="feature-card">
+              <i class="pi pi-chart-line feature-icon"></i>
+              <h3 class="feature-title">{{ $t('features.realTimeProgress.title') }}</h3>
+              <p class="feature-description">{{ $t('features.realTimeProgress.description') }}</p>
+            </div>
+
+            <!-- Feature 4: Categorizar transacciones -->
+            <div class="feature-card">
+              <i class="pi pi-folder-open feature-icon"></i>
+              <h3 class="feature-title">{{ $t('features.transactionCategorization.title') }}</h3>
+              <p class="feature-description">{{ $t('features.transactionCategorization.description') }}</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
     <section id="aboutus">
       <div class="aboutus-container">
         <div>
@@ -415,5 +455,57 @@ export default defineComponent({
     padding: 15px;
   }
 }
+
+.features-container {
+  min-height: 80vh;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.feature-card {
+  background-color: #f5f5f5;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  font-size: 40px;
+  color: #00ADEF;
+  margin-bottom: 15px;
+}
+
+.feature-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.feature-description {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
 
 </style>
