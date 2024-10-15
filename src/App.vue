@@ -234,7 +234,7 @@ export default defineComponent({
                 <pv-textarea :invalid="formMessageInvalid" v-model="formMessage" :placeholder="$t('contact.form.message')" class="contact-form" style="width: 80%; height: 250px;"/>
               </div>
               <div>
-                <pv-button style="background-color: #00aced; color: #ffffff" @click="contactFormSubmit"> {{ $t('contact.form.button') }} </pv-button>
+                <pv-button style="background-color: #00aced; color: #ffffff; border: none;" @click="contactFormSubmit"> {{ $t('contact.form.button') }} </pv-button>
               </div>
             </template>
           </pv-card>
@@ -428,6 +428,11 @@ export default defineComponent({
     .contact-form {
       background-color: #f8f8f8;
       color: black
+    }
+    .contact-form:focus {
+      background-color: #f8f8f8;
+      color: black;
+      border:  1px solid #00aced;
     }
   }
 }
