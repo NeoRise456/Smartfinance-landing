@@ -5,6 +5,8 @@ import App from './App.vue'
 import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
 import i18n from "@/i18n.js";
+import 'primeicons/primeicons.css'
+
 
 import Toolbar from "primevue/toolbar";
 import SelectButton from "primevue/selectbutton";
