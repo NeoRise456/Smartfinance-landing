@@ -58,7 +58,9 @@
       "email": "Email",
       "subject": "Asunto",
       "message": "Mensaje",
-      "button": "ENVIAR"
+      "button": "ENVIAR",
+      "data-sent-header": "Datos",
+      "data-sent-content": "Enviados Correctamente"
     }
   },
   "footer": {
