@@ -1,4 +1,23 @@
 {
+  "features": {
+    "title": "Features",
+    "savingsGoals": {
+      "title": "Savings Goals",
+      "description": "Set clear savings goals and track your progress."
+    },
+    "walletsOverview": {
+      "title": "Wallets Overview",
+      "description": "View all your wallets in one place."
+    },
+    "realTimeProgress": {
+      "title": "Real-Time Progress",
+      "description": "Monitor your savings in real-time."
+    },
+    "transactionCategorization": {
+      "title": "Transaction Categorization",
+      "description": "Organize your transactions by category."
+    }
+  },
   "toolbar": {
     "services": "Our Services",
     "about": "About Us",
