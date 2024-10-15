@@ -43,6 +43,7 @@ export default defineComponent({
           <a href="#mission" class="nav-spacer"> {{ $t('toolbar.mission') }} </a>
           <a href="#videos" class="nav-spacer"> {{ $t('toolbar.product') }} </a>
           <a href="#contact" class="nav-spacer"> {{ $t('toolbar.contact') }} </a>
+          <a href="#features" class="nav-spacer"> {{ $t('toolbar.features') }} </a>
         </template>
 
         <template #end>
@@ -457,8 +458,8 @@ export default defineComponent({
 }
 
 .features-container {
-  min-height: 80vh;
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  min-height: 50vh;
+  background: linear-gradient(180deg, rgb(52, 151, 217) 0%, rgb(255, 255, 255) 37%);
   display: flex;
   flex-direction: column;
   align-items: center;
