@@ -180,6 +180,31 @@ export default defineComponent({
           <span style="padding: 50px"/>
           <img src="./assets/images/upc-logo.png" alt="UPC Logo" height="200px">
         </div>
+        <div>
+          <h1 style="font-size: 50px; font-weight: bold"> {{ $t('about.team') }} </h1>
+        </div>
+        <div class="team">
+          <div>
+            <p style="font-weight: bold">Juan Astonitas</p>
+            <img src="./assets/images/team/JuanAstonitas.png" alt="Juan Astonitas">
+          </div>
+          <div>
+            <p style="font-weight: bold">Sebastian Pacheco</p>
+            <img src="./assets/images/team/SebastianPacheco.jpg" alt="Sebastian Pacheco">
+          </div>
+          <div>
+            <p style="font-weight: bold">Josue Paiva</p>
+            <img src="./assets/images/team/JosuePaiva.jpeg" alt="Josue Paiva">
+          </div>
+          <div>
+            <p style="font-weight: bold">Gianluca Pasquale</p>
+            <img src="./assets/images/team/GianlucaPasquale.jpg" alt="Gianluca Pasquale">
+          </div>
+          <div>
+            <p style="font-weight: bold">Sebastián Real</p>
+            <img src="./assets/images/team/SebastianReal.jpg" alt="Sebastián Real">
+          </div>
+        </div>
       </div>
     </section>
 
@@ -369,6 +394,18 @@ export default defineComponent({
   background-position: center;
   align-content: center;
   text-align: center;
+  .team {
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .team img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-style: ridge;
+  }
 }
 
 /* ------------------- */
