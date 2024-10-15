@@ -6,6 +6,38 @@ import LanguageSwitcher from "@/public/components/language-switcher.component.vu
 export default defineComponent({
   name: 'App',
   components: {LanguageSwitcher},
+  data() {
+    return {
+      // Variables para el formulario
+      formName: null,
+      formEmail: null,
+      formSubject: null,
+      formMessage: null,
+
+      formNameInvalid: false,
+      formEmailInvalid: false,
+      formSubjectInvalid: false,
+      formMessageInvalid: false,
+
+      formConfirmDialogVisible: false,
+    }
+  },
+  methods: {
+    contactFormSubmit() {
+      this.formNameInvalid = !this.formName;
+      this.formEmailInvalid = !this.formEmail;
+      this.formSubjectInvalid = !this.formSubject;
+      this.formMessageInvalid = !this.formMessage;
+
+      if (!this.formNameInvalid && !this.formEmailInvalid && !this.formSubjectInvalid && !this.formMessageInvalid) {
+        this.formName = "";
+        this.formEmail = "";
+        this.formSubject = "";
+        this.formMessage = "";
+        this.formConfirmDialogVisible = true;
+      }
+    }
+  },
   setup() {
     const handleScroll = () => {
       const navibar = document.querySelector('.navibar');
@@ -15,7 +47,6 @@ export default defineComponent({
         navibar.classList.remove('scrolled');
       }
     };
-
     onMounted(() => {
       window.addEventListener('scroll', handleScroll);
     });
@@ -23,7 +54,7 @@ export default defineComponent({
     onUnmounted(() => {
       window.removeEventListener('scroll', handleScroll);
     });
-  }
+  },
 })
 </script>
 
@@ -193,24 +224,24 @@ export default defineComponent({
             </template>
             <template #content>
               <div style="padding: 10px">
-                <pv-input-text :placeholder="$t('contact.form.name')" class="contact-form" style="width: 40%;"/>
-                <pv-input-text :placeholder="$t('contact.form.email')" class="contact-form"  style="width: 40%;"/>
+                <pv-input-text :invalid="formNameInvalid" v-model="formName" :placeholder="$t('contact.form.name')" class="contact-form" style="width: 40%;"/>
+                <pv-input-text :invalid="formEmailInvalid" v-model="formEmail" :placeholder="$t('contact.form.email')" class="contact-form"  style="width: 40%;"/>
               </div>
               <div style="padding: 10px">
-                <pv-input-text :placeholder="$t('contact.form.subject')"  class="contact-form" style="width: 80%;"/>
+                <pv-input-text :invalid="formSubjectInvalid" v-model="formSubject" :placeholder="$t('contact.form.subject')"  class="contact-form" style="width: 80%;"/>
               </div>
               <div style="padding: 10px">
-                <pv-textarea :placeholder="$t('contact.form.message')" class="contact-form" style="width: 80%; height: 250px;"/>
+                <pv-textarea :invalid="formMessageInvalid" v-model="formMessage" :placeholder="$t('contact.form.message')" class="contact-form" style="width: 80%; height: 250px;"/>
               </div>
               <div>
-                <pv-button style="background-color: #00aced; color: #ffffff"> {{ $t('contact.form.button') }} </pv-button>
+                <pv-button style="background-color: #00aced; color: #ffffff" @click="contactFormSubmit"> {{ $t('contact.form.button') }} </pv-button>
               </div>
             </template>
           </pv-card>
+          <pv-dialog v-model:visible="formConfirmDialogVisible" modal :header="$t('contact.form.data-sent-header')" position="top">{{$t('contact.form.data-sent-content')}}</pv-dialog>
         </div>
       </div>
     </section>
-
     <footer>
       <pv-toolbar class="footer">
         <template #center>
@@ -396,7 +427,6 @@ export default defineComponent({
     justify-content: center;
     .contact-form {
       background-color: #f8f8f8;
-      border: 0;
       color: black
     }
   }
