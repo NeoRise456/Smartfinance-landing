@@ -13,6 +13,7 @@ import Card from "primevue/card";
 import InputText from "primevue/inputtext";
 import Textarea from "primevue/textarea";
 import Fieldset from "primevue/fieldset";
+import Dialog from "primevue/dialog";
 
 const app = createApp(App)
 
@@ -33,6 +34,7 @@ app.component('pv-toolbar', Toolbar)
     .component('pv-input-text', InputText)
     .component('pv-textarea', Textarea)
     .component('pv-fieldset', Fieldset )
+    .component('pv-dialog', Dialog)
 
 app.use(i18n)
 
