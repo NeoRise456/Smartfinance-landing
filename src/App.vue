@@ -275,7 +275,9 @@ export default defineComponent({
           <h1 style="font-size: 40px; font-weight: bold"> {{ $t('product.team') }} </h1>
         </div>
         <div class="column">
-          <div class="video-placeholder"></div>
+          <iframe width="640" height="360"
+                  src="https://youtube.com/embed/DGThesurEMY">
+          </iframe>
           <h1 style="font-size: 40px; font-weight: bold"> {{ $t('product.product') }} </h1>
         </div>
       </div>
