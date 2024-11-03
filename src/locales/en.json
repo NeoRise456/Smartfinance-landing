@@ -1,0 +1,92 @@
+{
+  "features": {
+    "title": "Features",
+    "savingsGoals": {
+      "title": "Savings Goals",
+      "description": "Set clear savings goals and track your progress."
+    },
+    "walletsOverview": {
+      "title": "Wallets Overview",
+      "description": "View all your wallets in one place."
+    },
+    "realTimeProgress": {
+      "title": "Real-Time Progress",
+      "description": "Monitor your savings in real-time."
+    },
+    "transactionCategorization": {
+      "title": "Transaction Categorization",
+      "description": "Organize your transactions by category."
+    }
+  },
+  "toolbar": {
+    "services": "Our Services",
+    "about": "About Us",
+    "mission": "Our Mission",
+    "product": "About the Product",
+    "contact": "Contact Us",
+    "features": "Features"
+  },
+  "splash": {
+    "propietary": "By SmartFinance",
+    "subtitle": "Don't lose track of your expenses, earnings or transactions. We've got you covered.",
+    "slang": "Personal Finance. Nothing more.",
+    "button": "Log In"
+  },
+  "services": {
+    "title": "Our Services",
+    "manage": {
+      "title": "Manage your income and expenses",
+      "description": "With Finzar, you can manage your income and expenses in a simple and intuitive way."
+    },
+    "savings": {
+      "title": "Plan your savings",
+      "description": "With Finzar, you can plan your savings and know your progress at all times."
+    },
+    "statistics": {
+      "title": "Know Your Behavior with Statistics and Reports",
+        "description": "With Finzar, you can view a summary of your financial transactions through statistics and reports."
+    }
+  },
+  "about": {
+    "title": "About SmartFinance",
+    "description": "We are SmartFinance, a startup created by Software Engineering students from the Peruvian University of Applied Sciences of Peru, who have come together to create a solution with which people can keep track of their personal finances and feel comfortable and safe.",
+    "team": "Development Team"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "mission": {
+      "title": "Mission",
+      "description": "Our mission is to provide people with an easy-to-use solution to take control of their personal finances."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "At SmartFinance, we see ourselves as a benchmark in creating accessible and practical financial solutions for Peruvians."
+    },
+    "values": {
+      "title": "Values",
+      "description": "Finzar values financial education, accessibility, and empowering its users to make informed and responsible financial decisions."
+    }
+  },
+  "product": {
+    "team": "About The Team",
+    "product": "About The Product"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "button": "SEND",
+      "data-sent-header": "Data",
+      "data-sent-content": "Sent Succesfully"
+    }
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "cookies": "Cookies Policy",
+    "legal": "Legal Notice",
+    "contact": "Contact"
+  }
+}
