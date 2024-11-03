@@ -36,6 +36,9 @@ export default defineComponent({
         this.formMessage = "";
         this.formConfirmDialogVisible = true;
       }
+    },
+    redirectToFinzar() {
+      window.location.href = 'https://frontend-finzar.vercel.app/';
     }
   },
   setup() {
@@ -93,7 +96,9 @@ export default defineComponent({
           <span style="font-size: 50px; font-weight: bold;"> {{ $t('splash.propietary') }} </span> <br>
           <span style="font-size: 30px; margin: 20px"> {{ $t('splash.subtitle') }} </span> <br>
           <span style="font-size: 20px"> {{ $t('splash.slang') }} </span> <br><br>
-          <pv-button class="login"> {{ $t('splash.button') }} </pv-button>
+          <pv-button class="login"
+                     @click="redirectToFinzar">
+           {{ $t('splash.button') }} </pv-button>
         </div>
       </div>
     </section>
