@@ -231,10 +231,6 @@ export default defineComponent({
             <p style="font-weight: bold">Gianluca Pasquale</p>
             <img src="./assets/images/team/GianlucaPasquale.jpg" alt="Gianluca Pasquale">
           </div>
-          <div>
-            <p style="font-weight: bold">Sebastián Real</p>
-            <img src="./assets/images/team/SebastianReal.jpg" alt="Sebastián Real">
-          </div>
         </div>
       </div>
     </section>
