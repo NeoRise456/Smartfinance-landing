@@ -38,7 +38,7 @@ export default defineComponent({
       }
     },
     redirectToFinzar() {
-      window.location.href = 'https://frontend-finzar.vercel.app/';
+      window.location.href = 'https://frontend-finzar-wzu1.vercel.app/';
     }
   },
   setup() {
